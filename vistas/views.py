@@ -53,7 +53,7 @@ class vistaClass(View):
                 mensaje = "SERVO"
                 s.send(bytes(mensaje, "utf-8"))
                 msg = s.recv(1024)
-                print("El peso actual de del dispensador es de: ",msg.decode("utf-8"),"g")
+                #print("El peso actual de del dispensador es de: ",msg.decode("utf-8"),"g")
                 peso= msg.decode("utf-8") # Obtener solo la cantidad el numero lo regresa como String
                 s.close()
                 print()
@@ -74,7 +74,7 @@ class vistaClass(View):
                 mensaje = "PESO"
                 s.send(bytes(mensaje, "utf-8"))
                 msg = s.recv(1024)
-                print("El peso actual del dispensador es de: ",msg.decode("utf-8"),"g")
+                #print("El peso actual del dispensador es de: ",msg.decode("utf-8"),"g")
                 peso= msg.decode("utf-8") # Obtener solo la cantidad el numero lo regresa como String
                 s.close()
                 print()
