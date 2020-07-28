@@ -25,7 +25,7 @@ SECRET_KEY = 'ncaam_puzn1mauf2vjznjrj4jxwed42jtetbzzvf@4*_nr8(s6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['dispenser.ddns.net','localhost']
+ALLOWED_HOSTS = ['dispenser.ddns.net','localhost','192.168.1.83']
 
 
 # Application definition
