@@ -39,12 +39,12 @@
     <div>
         <br><br>
 
-        <form method="POST">
+        <form align="center" method="POST">
             {% csrf_token %}
 
-            <div style="margin-left: auto; margin-right: auto; width: 300px;" class="input-group date" id="datetimepicker1" data-target-input="nearest">
+            <div align = "center" style="width: 300px;margin-left: auto; margin-right: auto;" class="input-group date" id="datetimepicker1" data-target-input="nearest">
                 {{ form.date }}
-                <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                <div align="center" class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                 </div>
             </div>
@@ -65,13 +65,13 @@
                 });
               </script>
 
-            <div style="width: auto; height: auto;">
+            <div style="width: auto; height: auto;" align="center">
                 <button type="submit" id="btnC" name="btnC" style="font-family: cursive; border-radius: 25px; background-color: #FF4F00;
-            cursor: pointer; width: 500px; margin-left: 425px;">
+            cursor: pointer; width: 400px;">
                     <p style="
                 height: 10px;
                 color: white; font-size: 20px; margin-top: 0px;
-                 ">Aceptar</p>
+                 ">Agregar</p>
                 </button>
             </div>
 
