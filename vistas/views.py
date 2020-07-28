@@ -55,11 +55,12 @@ class vistaClass(View):
                 msg = s.recv(1024)
                 #print("El peso actual de del dispensador es de: ",msg.decode("utf-8"),"g")
                 peso= msg.decode("utf-8") # Obtener solo la cantidad el numero lo regresa como String
-                s.close()
-                print()
-                print("ADIOS")
+                newpeso = int(peso)
+                if newpeso < 0:
+                    newpeso = 0
+                peso = str(newpeso)
                 messages.info(request, peso)
-
+                s.close()
                 return render(request,'index/index.html')
             except:
                     messages.info(request, 'Error')
@@ -76,9 +77,12 @@ class vistaClass(View):
                 msg = s.recv(1024)
                 #print("El peso actual del dispensador es de: ",msg.decode("utf-8"),"g")
                 peso= msg.decode("utf-8") # Obtener solo la cantidad el numero lo regresa como String
+                newpeso = int(peso)
+                if newpeso < 0:
+                    newpeso = 0
+                peso = str(newpeso)
+                messages.info(request, peso)
                 s.close()
-                print()
-                print("ADIOS")
                 messages.info(request, peso)
 
                 return render(request,'index/index.html')
