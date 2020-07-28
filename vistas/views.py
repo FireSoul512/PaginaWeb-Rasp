@@ -83,7 +83,6 @@ class vistaClass(View):
                 peso = str(newpeso)
                 messages.info(request, peso)
                 s.close()
-                messages.info(request, peso)
 
                 return render(request,'index/index.html')
 
