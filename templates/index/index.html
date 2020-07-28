@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispensador</title>
+</head>
+
+
+<body>
+    <div style="width: auto; height: auto;">
+        <div style="width: auto; margin-top: auto; height: 170px; background-color: #FF8600;">
+            <br>
+            <div style="margin-left: auto; margin-right: auto; margin-top: auto; width: 500px; height: 100px;
+                background-color: white; border-radius: 25px; text-align: center;">
+                <br>
+                <h1 style="width: auto; height: auto; margin-top: 2%; font-family: cursive; ">
+                    Dispensador de comida
+                </h1>
+            </div>
+        </div>
+
+        <div style="width: auto; height: 439px; background-color: white;">
+            <br>
+            <div style="margin-left: auto; margin-right: auto; margin-top: 4%; width: 500px; height: 250px;
+          background-color: #FFB700; border-radius: 25px; text-align: center;">
+                <br>
+
+                <h2 style="width: auto; height: auto; font-family: cursive; font-size: 40px; margin-top: 3px;"> Peso del
+                    alimento actual</h2>
+
+                <form method="POST">
+                    <h3 {% if message.tags %} class="{{ message.tags }}" {% endif %}
+                        style="font-family: cursive; font-size: 35px;">
+                        {% if messages %}
+                        {% for message in messages %}
+
+                        '{{message}}' gr
+
+                        {% endfor %}
+                        {% endif %}
+                    </h3>
+                    {% csrf_token %}
+
+                    <div class="text-center form-check " style="margin-left:auto; margin-right: auto;">
+
+                        <button id="btn1" name="btn1" type="submit" style="margin-top: -25px; width: 180px; margin-right: auto; height: 50px; 
+                        font-family: cursive; border-radius: 25px; background-color: #FF4F00;
+                        cursor: pointer;
+                            " class="btn btn-primary ">
+                                <p style="
+                                    height: 10px;
+                                    color: white; font-size: 25px; margin-top: 0px;
+                                    ">Despachar
+                                </p>
+                        </button>
+                        <button id="btn2" name="btn2" type="submit" style="margin-left: 10px; 
+                        margin-top: 0px; width: 180px; height: 50px; 
+                        font-family: cursive; border-radius: 25px; background-color: #FF4F00;
+                        cursor: pointer;
+                        " class="btn btn-primary ">
+                                <p style="
+                                    height: 10px;
+                                    color: white; font-size: 15px; margin-top: 0px;
+                                    ">Cantidad de alimento
+                                </p>
+                        </button>
+                    </div>
+            </div>
+            <br>
+            
+            <div style="width: auto; height: auto;">
+                <button type="submit" id="btn3" name="btn3" style="font-family: cursive; border-radius: 25px; background-color: #FF4F00;
+                cursor: pointer; width: 500px; margin-left: 425px;">
+                    <p style="
+                    height: 10px;
+                    color: white; font-size: 20px; margin-top: 0px;
+                     ">Elegir hora y fecha</p>
+                </button>
+            </div>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
