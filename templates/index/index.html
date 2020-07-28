@@ -9,10 +9,10 @@
 
 
 <body>
-    <div style="width: auto; height: auto;">
-        <div style="width: auto; margin-top: auto; height: 170px; background-color: #FF8600;">
+    <div style="width: auto; height: auto;" align = "center">
+        <div align="center" style="width: auto; height: 170px; background-color: #FF8600;">
             <br>
-            <div style="margin-left: auto; margin-right: auto; margin-top: auto; width: 500px; height: 100px;
+            <div style=" width: 400px; height: 100px;
                 background-color: white; border-radius: 25px; text-align: center;">
                 <br>
                 <h1 style="width: auto; height: auto; margin-top: 2%; font-family: cursive; ">
@@ -20,11 +20,12 @@
                 </h1>
             </div>
         </div>
-
-        <div style="width: auto; height: 439px; background-color: white;">
+        
+        <!-- Este es un contenedor para la parte de servor y obtener peso -->
+        <div style="width: auto; height: 439px; background-color: white;"> 
             <br>
-            <div style="margin-left: auto; margin-right: auto; margin-top: 4%; width: 500px; height: 250px;
-          background-color: #FFB700; border-radius: 25px; text-align: center;">
+            <div align="center" style="margin-top: 4%; width: 500px; height: 250px;
+                background-color: #FFB700; border-radius: 25px; text-align: center;">
                 <br>
 
                 <h2 style="width: auto; height: auto; font-family: cursive; font-size: 40px; margin-top: 3px;"> Peso del
@@ -43,45 +44,44 @@
                     </h3>
                     {% csrf_token %}
 
-                    <div class="text-center form-check " style="margin-left:auto; margin-right: auto;">
-
-                        <button id="btn1" name="btn1" type="submit" style="margin-top: -25px; width: 180px; margin-right: auto; height: 50px; 
-                        font-family: cursive; border-radius: 25px; background-color: #FF4F00;
+                    <div align="center" class="text-center form-check " style="margin-left:auto; margin-right: auto;">
+                        <button id="btn1" name="btn1" type="submit" style="width: 180px; height: 50px; 
+                        font-family: 'Times New Roman', Times, serif; border-radius: 25px; background-color: #FF4F00;
                         cursor: pointer;
                             " class="btn btn-primary ">
-                                <p style="
-                                    height: 10px;
-                                    color: white; font-size: 25px; margin-top: 0px;
-                                    ">Despachar
-                                </p>
+                            <p style="
+                                color: white; font-size: 15px;
+                                ">Despachar
+                            </p>
                         </button>
-                        <button id="btn2" name="btn2" type="submit" style="margin-left: 10px; 
-                        margin-top: 0px; width: 180px; height: 50px; 
-                        font-family: cursive; border-radius: 25px; background-color: #FF4F00;
+
+                        <button id="btn2" name="btn2" type="submit" style="
+                        width: 180px; height: 50px; 
+                        font-family: 'Times New Roman', Times, serif; border-radius: 25px; background-color: #FF4F00;
                         cursor: pointer;
                         " class="btn btn-primary ">
-                                <p style="
-                                    height: 10px;
-                                    color: white; font-size: 15px; margin-top: 0px;
-                                    ">Cantidad de alimento
-                                </p>
+                            <p style="
+                                color: white; font-size: 15px;
+                                ">Cantidad de alimento
+                            </p>
                         </button>
                     </div>
             </div>
             <br>
-            
-            <div style="width: auto; height: auto;">
-                <button type="submit" id="btn3" name="btn3" style="font-family: cursive; border-radius: 25px; background-color: #FF4F00;
-                cursor: pointer; width: 500px; margin-left: 425px;">
+
+        </div>
+
+        <div align = "center">
+            <button align = "center"; type="submit" id="btn3" name="btn3" style="font-family: cursive; border-radius: 25px; background-color: #FF4F00;
+                cursor: pointer; width: 550px; margin-left:auto; text-align: center;">
                     <p style="
                     height: 10px;
                     color: white; font-size: 20px; margin-top: 0px;
-                     ">Elegir horas de activacion automatica</p>
-                </button>
-            </div>
-            </form>
-
+                    ">Elegir horas de activacion automatica</p>
+            </button>
+            
         </div>
+        </form>
 
     </div>
 </body>
