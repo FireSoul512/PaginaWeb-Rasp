@@ -48,7 +48,7 @@ class vistaClass(View):
             try:
                 print("boton despachar")
                 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                s.connect( ('192.168.1.71',7080) )
+                s.connect( ('raspy2412.ddns.net',7080) )
                 print("Ya conecto ;v")
                 mensaje = "SERVO"
                 s.send(bytes(mensaje, "utf-8"))
@@ -70,7 +70,7 @@ class vistaClass(View):
             try:
                 print("boton peso")
                 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                s.connect( ('192.168.1.71',7080) )
+                s.connect( ('raspy2412.ddns.net',7080) )
                 mensaje = "PESO"
                 s.send(bytes(mensaje, "utf-8"))
                 msg = s.recv(1024)
